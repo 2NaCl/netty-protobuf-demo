@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package com.protocol;
+
+option optimize_for = SPEED;
+option java_package = "com.fyj.protobuf.nettybuf";
+option java_outer_classname = "MyDataInfo";
+
+message Person{
+    string name=1;
+    int32 age=2;
+    string address=3;
+}
